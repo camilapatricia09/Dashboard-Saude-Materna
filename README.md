@@ -22,9 +22,13 @@ O sistema permite o monitoramento da mortalidade materna, fornecendo indicadores
 ## Estrutura do Projeto
 
 📁 Dashboard-Saude-Materna
+
 │── 📂 dados/ # Conjunto de dados utilizados (CSV)
+
 │── 📂 documentacao/ # Manuais do usuário e desenvolvimento
+
 │── 📜 Dashboard_Saude_Materna.pbix # Arquivo principal do Power BI
+
 │── 📜 README.md # Documentação principal do projeto
 
 markdown
