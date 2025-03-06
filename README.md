@@ -31,9 +31,6 @@ O sistema permite o monitoramento da mortalidade materna, fornecendo indicadores
 
 │── 📜 README.md # Documentação principal do projeto
 
-markdown
-Copiar
-Editar
 
 ## Fontes de Dados
 
