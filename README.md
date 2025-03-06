@@ -55,16 +55,17 @@ O dashboard utiliza dados de mortalidade materna, estruturados no seguinte forma
 ```DAX
 TaxaMortalidade = DIVIDE(SUM(MortalidadeMaterna[ÓbitosMaternos]), SUM(MortalidadeMaterna[NascidosVivos])) * 100000
 
-Total de Óbitos por Município:
+**Total de Óbitos por Município**:
 ```DAX
 TotalObitos = SUM(MortalidadeMaterna[ÓbitosMaternos])
 
-Melhorias Futuras
+## Melhorias Futuras
+
 Integração com APIs para atualização automática dos dados.
 Expansão dos indicadores para incluir dados socioeconômicos.
 Melhorias na interface para otimizar a experiência do usuário.
 
-Como Contribuir
-Caso queira sugerir melhorias ou reportar problemas, abra uma issue ou envie um pull request.
+## Como Contribuir
 
+Caso queira sugerir melhorias ou reportar problemas, abra uma issue ou envie um pull request.
 Contato: camilaufs1@gmail.com
