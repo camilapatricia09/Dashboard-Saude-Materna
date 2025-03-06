@@ -49,16 +49,6 @@ O dashboard utiliza dados de mortalidade materna, estruturados no seguinte forma
 2. **Transformação**: Limpeza, padronização e criação de indicadores.
 3. **Carga**: Armazenamento e relacionamento dos dados no Power BI.
 
-## Principais Métricas (DAX)
-
-**Taxa de Mortalidade Materna**:
-```DAX
-TaxaMortalidade = DIVIDE(SUM(MortalidadeMaterna[ÓbitosMaternos]), SUM(MortalidadeMaterna[NascidosVivos])) * 100000
-
-**Total de Óbitos por Município**:
-```DAX
-TotalObitos = SUM(MortalidadeMaterna[ÓbitosMaternos])
-
 ## Melhorias Futuras
 
 Integração com APIs para atualização automática dos dados.
