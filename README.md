@@ -20,12 +20,19 @@ O sistema permite o monitoramento da mortalidade materna, fornecendo indicadores
 - **DAX (Data Analysis Expressions)** - Criação de métricas e cálculos analíticos.
 
 ## Estrutura do Projeto
+
 📁 Dashboard-Saude-Materna
 │── 📂 dados/ # Conjunto de dados utilizados (CSV)
+│── 📂 documentacao/ # Manuais do usuário e desenvolvimento
 │── 📜 Dashboard_Saude_Materna.pbix # Arquivo principal do Power BI
 │── 📜 README.md # Documentação principal do projeto
 
+markdown
+Copiar
+Editar
+
 ## Fontes de Dados
+
 O dashboard utiliza dados de mortalidade materna, estruturados no seguinte formato:
 
 | Campo            | Tipo    | Descrição                                      |
@@ -37,24 +44,26 @@ O dashboard utiliza dados de mortalidade materna, estruturados no seguinte forma
 | TaxaMortalidade | Decimal | (ÓbitosMaternos / NascidosVivos) * 100.000 |
 
 ## Processos de ETL (Power Query)
-1. Extração: Importação dos arquivos CSV.
-2. Transformação: Limpeza, padronização e criação de indicadores.
-3. Carga: Armazenamento e relacionamento dos dados no Power BI.
+
+1. **Extração**: Importação dos arquivos CSV.
+2. **Transformação**: Limpeza, padronização e criação de indicadores.
+3. **Carga**: Armazenamento e relacionamento dos dados no Power BI.
 
 ## Principais Métricas (DAX)
+
 **Taxa de Mortalidade Materna**:
 ```DAX
 TaxaMortalidade = DIVIDE(SUM(MortalidadeMaterna[ÓbitosMaternos]), SUM(MortalidadeMaterna[NascidosVivos])) * 100000
+Total de Óbitos por Município:
 
-**Total de Óbitos por Município:**
-```DAX
+DAX
+Copiar
+Editar
 TotalObitos = SUM(MortalidadeMaterna[ÓbitosMaternos])
-
-## Melhorias Futuras:
-- Integração com APIs para atualização automática dos dados.
-- Expansão dos indicadores para incluir dados socioeconômicos.
-- Melhorias na interface para otimizar a experiência do usuário.
-
-## Como Contribuir
+Melhorias Futuras
+Integração com APIs para atualização automática dos dados.
+Expansão dos indicadores para incluir dados socioeconômicos.
+Melhorias na interface para otimizar a experiência do usuário.
+Como Contribuir
 Caso queira sugerir melhorias ou reportar problemas, abra uma issue ou envie um pull request.
 Contato: camilaufs1@gmail.com
